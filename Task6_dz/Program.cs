@@ -22,8 +22,9 @@ int Ancermanfunction(int n, int m)
     
 }
 
-int m = 1;
-int n = 4;
+int m = 2;
+int n = 3;
+
 
 int result = Ancermanfunction(n, m);
-Console.WriteLine($"A({m}, {n}) = {result} ");
+Console.Write($"A({m}, {n}) = {result} ");

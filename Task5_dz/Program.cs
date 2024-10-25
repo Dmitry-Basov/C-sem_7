@@ -8,23 +8,42 @@
 
 
 
+void PrintRange(int m, int n)
+{
+    if (m > n)
+    {
+
+        PrintRange(m - 1, n);
+        Console.Write($"{m}, ");
+    }
+
+    else if (m < n)
+    {
+        PrintRange(n - 1, m);
+        Console.Write($"{n}, ");
+    }
+
+}
+
+
+
 Console.WriteLine("Введите натуральное число m: ");
 int m = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите число n: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-void PrintRange(int m, int n)
-{
-    if (m > n) return;
-    Console.Write(m);
-
-    if (m < n)
-    {
-        Console.Write(", ");
-    }
-    PrintRange(m + 1, n);
-}
-
 Console.WriteLine("Числа в промежутке: ");
 PrintRange(m, n);
+
+// if (m > n)
+//     {
+//         PrintRange(m - 1, n);
+//         Console.Write($"{m}, ");
+//     }
+
+//     else if (m < n)
+//     {
+//         PrintRange(n- 1, m);
+//         Console.Write($"{n}, ");
+//     }
