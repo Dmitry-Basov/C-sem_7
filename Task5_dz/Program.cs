@@ -12,9 +12,8 @@ void PrintRange(int m, int n)
 {
     if (m > n)
     {
-
         PrintRange(m - 1, n);
-        Console.Write($"{m}, ");
+        Console.Write($"{m}, ");   
     }
 
     else if (m < n)
@@ -24,8 +23,6 @@ void PrintRange(int m, int n)
     }
 
 }
-
-
 
 Console.WriteLine("Введите натуральное число m: ");
 int m = Convert.ToInt32(Console.ReadLine());
